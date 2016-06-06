@@ -2,8 +2,8 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>ScatterChartIDd10464a667c</title>
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>ScatterChartID194065d938b8</title>
+<meta http-equiv="content-type" content="text/html;charset=euk-kr" />
 <style type="text/css">
 body {
   color: #444444;
@@ -18,14 +18,14 @@ body {
 </head>
 <body>
  <!-- ScatterChart generated in R 3.2.4 by googleVis 0.5.10 package -->
-<!-- Mon May 30 20:08:59 2016 -->
+<!-- Mon Jun 06 10:26:44 2016 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataScatterChartIDd10464a667c () {
+function gvisDataScatterChartID194065d938b8 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -686,21 +686,27 @@ var datajson =
 55.633 
 ] 
 ];
-data.addColumn('number','a.Income');
-data.addColumn('number','a.lifeExp');
+data.addColumn('number','data1.Income');
+data.addColumn('number','data1.lifeExp');
 data.addRows(datajson);
 return(data);
 }
  
 // jsDrawChart
-function drawChartScatterChartIDd10464a667c() {
-var data = gvisDataScatterChartIDd10464a667c();
+function drawChartScatterChartID194065d938b8() {
+var data = gvisDataScatterChartID194065d938b8();
 var options = {};
 options["allowHtml"] = true;
+options["title"] = "소득과 기대수명의 상관성";
+options["pointShape"] = "polygon";
+options["vAxis"] = {title:'소득'};
+options["hAxis"] = {title:'기대수명'};
+options["width"] =    600;
+options["height"] =    800;
 
 
     var chart = new google.visualization.ScatterChart(
-    document.getElementById('ScatterChartIDd10464a667c')
+    document.getElementById('ScatterChartID194065d938b8')
     );
     chart.draw(data,options);
     
@@ -724,9 +730,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartScatterChartIDd10464a667c);
+callbacks.push(drawChartScatterChartID194065d938b8);
 })();
-function displayChartScatterChartIDd10464a667c() {
+function displayChartScatterChartID194065d938b8() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -750,23 +756,18 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartScatterChartIDd10464a667c"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartScatterChartID194065d938b8"></script>
  
 <!-- divChart -->
   
-<div id="ScatterChartIDd10464a667c" 
-  style="width: 500; height: automatic;">
+<div id="ScatterChartID194065d938b8" 
+  style="width: 600; height: 800;">
 </div>
- <div><span>Data: d.f &#8226; Chart ID: <a href="Chart_ScatterChartIDd10464a667c.html">ScatterChartIDd10464a667c</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
+ <div><span>Data: d.f &#8226; Chart ID: <a href="Chart_ScatterChartID194065d938b8.html">ScatterChartID194065d938b8</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
 <!-- htmlFooter -->
 <span> 
   R version 3.2.4 Revised (2016-03-16 r70336) 
   &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/scatterchart">Documentation and Data Policy</a>
 </span></div>
-<div>
-<p>
-x축=소득, y축은 기대수명. 소득에 따른 기대수명을 보여주는 산점 도표이다. 이 도표에 따르면 소득과 기대수명이 어느정도 정의관계에 있다고 할 수 있다.   
-</p>  
-</div>  
 </body>
 </html>
