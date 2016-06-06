@@ -2,8 +2,8 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>LineChartIDd1055a1ded</title>
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>LineChartID19403d092302</title>
+<meta http-equiv="content-type" content="text/html;charset=euk-kr" />
 <style type="text/css">
 body {
   color: #444444;
@@ -18,14 +18,14 @@ body {
 </head>
 <body>
  <!-- LineChart generated in R 3.2.4 by googleVis 0.5.10 package -->
-<!-- Mon May 30 20:45:20 2016 -->
+<!-- Mon Jun 06 11:25:34 2016 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataLineChartIDd1055a1ded () {
+function gvisDataLineChartID19403d092302 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -693,14 +693,19 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartLineChartIDd1055a1ded() {
-var data = gvisDataLineChartIDd1055a1ded();
+function drawChartLineChartID19403d092302() {
+var data = gvisDataLineChartID19403d092302();
 var options = {};
 options["allowHtml"] = true;
+options["title"] = "나라별 소득수준";
+options["hAxis"] = {title: '나라'};
+options["vAxis"] = {title: '소득수준'};
+options["width"] =    900;
+options["height"] =    700;
 
 
     var chart = new google.visualization.LineChart(
-    document.getElementById('LineChartIDd1055a1ded')
+    document.getElementById('LineChartID19403d092302')
     );
     chart.draw(data,options);
     
@@ -724,9 +729,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartLineChartIDd1055a1ded);
+callbacks.push(drawChartLineChartID19403d092302);
 })();
-function displayChartLineChartIDd1055a1ded() {
+function displayChartLineChartID19403d092302() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -750,18 +755,22 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartLineChartIDd1055a1ded"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartLineChartID19403d092302"></script>
  
 <!-- divChart -->
   
-<div id="LineChartIDd1055a1ded" 
-  style="width: 500; height: automatic;">
+<div id="LineChartID19403d092302" 
+  style="width: 900; height: 700;">
 </div>
- <div><span>Data: data &#8226; Chart ID: <a href="Chart_LineChartIDd1055a1ded.html">LineChartIDd1055a1ded</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
+ <div><span>Data: data &#8226; Chart ID: <a href="Chart_LineChartID19403d092302.html">LineChartID19403d092302</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
 <!-- htmlFooter -->
 <span> 
   R version 3.2.4 Revised (2016-03-16 r70336) 
   &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/linechart">Documentation and Data Policy</a>
 </span></div>
+<div>나라별 소득수준을 라인차트로 나타낸 것이다.
+<p>노르웨이와 스위스가 가장 높은 수준의 소득을 보여주고</p>
+<p>부룬디, 중앙 아프리카 공화국이 가장 낮은 소득 수준을 보이고 있다.</p>  
+</div>
 </body>
 </html>
